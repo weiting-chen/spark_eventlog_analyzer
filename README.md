@@ -1,20 +1,64 @@
-# spark_eventlog_analyzer
-Prequisites
-1. pip3 install jupyter
-2. pip3 install notebook
-3. pip3 install matplotlib
-4. pip3 install seaborn
-5. pip3 install pandasql
-6. pip3 install ipykernel
-7. pip3 install pyhdfs
-8. pip3 install pyarrow
-9. pip3 install findspark
+### Spark Eventlog Analyzer
+## Prequisites
 
-Put below two .ipynb in the jupyter root directory
-1. sparklog.ipynb
-2. gazelle_analysis.ipynb
+# Jupyter Installation
+```
+pip3 install jupyter
+```
 
+# Notebook Installation
+```
+pip3 install notebook
+```
+
+# iPyKernel
+```
+pip3 install ipykernel
+```
+# FindSpark
+```
+pip3 install findspark
+```
+
+# Matplotlib
+```
+pip3 install matplotlib
+```
+
+# Seaborn
+```
+pip3 install seaborn
+```
+
+# Pandasql
+```
+pip3 install pandasql
+```
+
+# PyHDFS
+```
+pip3 install pyhdfs
+```
+
+# PyArrow
+```
+pip3 install pyarrow
+```
+
+### Put below two .ipynb in the jupyter root directory
+## sparklog.ipynb
+sparklog.ipynb is the function definition for spark eventlog analyzer
+
+## gazelle_analysis.ipynb
+gazelle_analysis is the main program to call sparklog.ipynb and load the eventlog from hdfs.
+
+###How it works:
 Launch gazelle_analysis.ipynb as main script
 
-Functions
+###Parameters:
+In Analysis:generate_trace_view, the url for display.
+In App_Log_Analysis:get_basic_state, the url for display.
+In App_Log_Analysis:get_app_info, the url for display.
+In show_rst function, the url for html.
+In pyhdfs, the url for HDFS hosts.
 
